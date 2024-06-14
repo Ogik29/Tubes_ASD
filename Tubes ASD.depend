@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1717707926 source:d:\rizki\coding\code block\asd semester 2\tubes asd\main.cpp
+	<iostream>
+	"header.h"
+
+1717700953 d:\rizki\coding\code block\asd semester 2\tubes asd\header.h
+	<string.h>
+	<iostream>
+
+1717707713 source:d:\rizki\coding\code block\asd semester 2\tubes asd\source.cpp
+	<string.h>
+	<iostream>
+	"header.h"
+
