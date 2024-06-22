@@ -306,20 +306,14 @@ void deletePlayer(ListPlayer &LP, ListMatch &LM, int numberPlayer)
 {
     adr_player p;
     adr_match m;
-    ListMatch temp;
 
     p = searchPlayer(LP, numberPlayer);
-    if (p != NULL)
-    {
+    if (p != NULL) {
         m = LM.first_match;
-
-        // jika tidak ada match
-        if (m == NULL)
-        {
+        if (m == NULL) {
             deleteAfterPlayer(LP, numberPlayer);
         } else {
-            while (m->next_match != NULL)
-            {
+            while (m->next_match != NULL) {
                 deleteAfterPlayer(m->player, numberPlayer);
                 m->info.playerCount--;
                 p->info.matchCount--;
@@ -332,7 +326,8 @@ void deletePlayer(ListPlayer &LP, ListMatch &LM, int numberPlayer)
         
     }
     deleteAfterPlayer(LP, numberPlayer);
-    cout << "Pemain tidak ada." << endl;
+    cout << "Player not found" << endl;
+    
 }
 
 void searchPlayerinMatch(ListMatch LM, int matchdDay) {

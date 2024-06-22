@@ -68,6 +68,6 @@ void searchMatchbyPlayer(ListMatch LM, ListPlayer LP, int numberPlayer);
 void deletePlayerinMatch(ListMatch &LM, ListPlayer &LP, int matchDay, int numberPlayer);
 void sortingJerseyNumber(ListPlayer LP);
 void sortingMatchbyPlayerCount(ListMatch LM);
-void sortingPlayer(ListPlayer LP);
+void sortingPlayerbyMatchCount(ListPlayer LP);
 
 #endif // HEADER_H_INCLUDED
